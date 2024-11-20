@@ -1,0 +1,35 @@
+nav {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  border-radius: 1rem;
+  overflow: hidden;
+  transform: translateX(-50%);
+  background-color: var(--secondary-color-dark);
+  min-width: 500px;
+  width: 50vw;
+}
+
+.nav-options {
+  margin: auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-option {
+  user-select: none;
+  font-weight: lighter;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 10px 5px;
+  text-wrap: nowrap;
+}
+
+.nav-option:hover {
+  cursor: pointer;
+  background-color: var(--third-color-dark);
+}

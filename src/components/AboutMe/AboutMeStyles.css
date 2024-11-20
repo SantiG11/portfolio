@@ -1,0 +1,16 @@
+.about-me-section {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 60%;
+  height: 10vh;
+  min-height: fit-content;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.about-me-content {
+  text-align: start;
+}

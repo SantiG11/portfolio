@@ -1,0 +1,17 @@
+.skills-section {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 60%;
+  height: 10vh;
+  min-height: fit-content;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.skills-container {
+  display: flex;
+  gap: 1rem;
+}
