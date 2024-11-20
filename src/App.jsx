@@ -1,5 +1,5 @@
 import "./App.css";
-import { AboutMe, Hero, NavBar } from "./components";
+import { AboutMe, Hero, NavBar, Skills } from "./components";
 
 function App() {
   const sections = [
@@ -17,6 +17,7 @@ function App() {
       </header>
       <Hero />
       <AboutMe />
+      <Skills />
     </>
   );
 }

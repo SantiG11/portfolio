@@ -27,9 +27,10 @@ nav {
   flex-grow: 1;
   padding: 10px 5px;
   text-wrap: nowrap;
+  transition: background-color 0.5s ease;
 }
 
 .nav-option:hover {
   cursor: pointer;
-  background-color: var(--third-color-dark);
+  background-color: var(--primary-color-dark);
 }
