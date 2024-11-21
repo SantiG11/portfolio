@@ -1,8 +1,9 @@
+import React from "react";
 import "./AboutMeStyles.css";
 
-export function AboutMe() {
+export const AboutMe = React.forwardRef((props, ref) => {
   return (
-    <div className="about-me-section">
+    <div className="about-me-section" ref={ref}>
       <h3>Sobre mí</h3>
       <p className="about-me-content">
         Soy un desarrollador autodidacta, inclinado hacia el desarrollo
@@ -11,4 +12,4 @@ export function AboutMe() {
       </p>
     </div>
   );
-}
+});

@@ -1,0 +1,13 @@
+.projects-title {
+  grid-column: 1 / -1;
+  text-align: start;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: space-evenly;
+  gap: 2rem;
+
+  padding: 1rem;
+}

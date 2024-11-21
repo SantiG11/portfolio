@@ -1,23 +1,40 @@
+import { useRef } from "react";
 import "./App.css";
-import { AboutMe, Hero, NavBar, Skills } from "./components";
+import { AboutMe, Hero, NavBar, Projects, Skills } from "./components";
 
 function App() {
   const sections = [
-    "Inicio",
-    "Sobre mi",
-    "Habilidades",
-    "Proyectos",
-    "Contacto",
+    { id: "Inicio", label: "Inicio" },
+    { id: "SobreMi", label: "Sobre mi" },
+    { id: "Habilidades", label: "Habilidades" },
+    { id: "Proyectos", label: "Proyectos" },
+    { id: "Contacto", label: "Contacto" },
   ];
+
+  const sectionRefs = sections.reduce((acc, section) => {
+    acc[section.id] = useRef(null);
+    return acc;
+  }, {});
+
+  const scrollToSection = (id) => {
+    const offset = 80;
+    const sectionTop = sectionRefs[id].current.offsetTop;
+
+    window.scrollTo({
+      top: sectionTop - offset, // Subtract offset to adjust position
+      behavior: "smooth",
+    });
+  };
 
   return (
     <>
       <header>
-        <NavBar sections={sections} />
+        <NavBar sections={sections} scrollToSection={scrollToSection} />
       </header>
-      <Hero />
-      <AboutMe />
-      <Skills />
+      <Hero ref={sectionRefs.Inicio} />
+      <AboutMe ref={sectionRefs.SobreMi} />
+      <Skills ref={sectionRefs.Habilidades} />
+      <Projects ref={sectionRefs.Proyectos} />
     </>
   );
 }
