@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./App.css";
-import { AboutMe, Hero, NavBar, Projects, Skills } from "./components";
+import { AboutMe, Contact, Hero, NavBar, Projects, Skills } from "./components";
 
 function App() {
   const sections = [
@@ -17,7 +17,7 @@ function App() {
   }, {});
 
   const scrollToSection = (id) => {
-    const offset = 80;
+    const offset = 70;
     const sectionTop = sectionRefs[id].current.offsetTop;
 
     window.scrollTo({
@@ -33,6 +33,7 @@ function App() {
       </header>
       <Hero ref={sectionRefs.Inicio} />
       <AboutMe ref={sectionRefs.SobreMi} />
+      {/* <Contact /> */}
       <Skills ref={sectionRefs.Habilidades} />
       <Projects ref={sectionRefs.Proyectos} />
     </>

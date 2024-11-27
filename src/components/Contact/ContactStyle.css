@@ -1,0 +1,32 @@
+.contact-section {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  padding: 5px 10px;
+  gap: 1rem;
+}
+
+a {
+  padding: 5px;
+}
+
+a div svg {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a div img {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
