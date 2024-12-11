@@ -13,4 +13,5 @@
 .about-me-content {
   text-align: start;
   max-width: 60ch;
+  text-wrap: pretty;
 }

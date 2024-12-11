@@ -1,31 +1,25 @@
+import { Badge } from "../Badge/Badge";
 import "./ProjectCardStyles.css";
-import { Chip } from "@mui/material";
 
-export function ProjectCard() {
+export function ProjectCard({ title, img, description, technologies }) {
   return (
     <div className="project-card">
-      <img className="project-img" src="src\assets\descarga.jpg" alt="" />
+      <a
+        className="project-link"
+        href="https://ecommerce-orcin-three-49.vercel.app/"
+        target="_blank"
+      >
+        <img className="project-img" src={img} alt={title} />
+      </a>
       <article className="project-description-container">
-        <h3>Nombre del proyecto</h3>
-        <p>
-          Este proyecto se trata de una pagina web hecha con el objetivo de
-          practicar y mejorar mis habilidades como desarrollador. Es un modelo
-          de ecommerce de calzado el cual muestra productos que pueden ser
-          filtrados por talle, genero, rango de precio o temporada. Tambien
-          pueden ser ordenados por precio, temporada, o alfabeticamente. Cuenta
-          con un carrito donde se agregan los objetos deseados.
-        </p>
+        <h3>{title}</h3>
+        <p>{description}</p>
         <div className="used-technologies">
           <h4>Tecnologias usadas: </h4>
           <div className="chips-container">
-            <Chip
-              label="html"
-              variant="outlined"
-              color="secondary"
-              size="small"
-            />
-            <Chip label="css" color="primary" size="small" className="chip" />
-            <Chip label="javascript" color="info" size="small" />
+            {technologies.map((technology) => (
+              <Badge text={technology} />
+            ))}
           </div>
         </div>
       </article>

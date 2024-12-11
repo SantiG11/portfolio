@@ -4,6 +4,7 @@
 }
 
 .contacts-container {
+  flex-grow: 1;
   display: flex;
   align-items: start;
   justify-content: space-around;
@@ -13,6 +14,18 @@
 
 a {
   padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+
+  background-color: var(--background-dark);
+}
+
+a div {
+  z-index: 1;
+  background-color: var(--background-dark);
 }
 
 a div svg {
@@ -21,6 +34,42 @@ a div svg {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.mail-container {
+  position: relative;
+
+  width: fit-content;
+  flex-grow: 1;
+}
+
+.mail-container p {
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  padding: 0.5em;
+  margin: 0;
+  color: var(--background-dark);
+  user-select: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: left 0.5s ease-in-out, color 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.mail-container:hover {
+  width: fit-content;
+  overflow: visible;
+}
+
+.mail-container a:hover p {
+  opacity: 1;
+  color: #fff;
+  left: 100%;
+  visibility: visible;
+  transition: left 0.5s ease-in-out, color 0.5s ease-in, opacity 0.5s ease-in;
+  user-select: text;
 }
 
 a div img {
