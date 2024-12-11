@@ -1,0 +1,18 @@
+.tooltip {
+  width: fit-content;
+  text-wrap: nowrap;
+  font-size: 0.8rem;
+  background-color: #000;
+  opacity: 0.8;
+  padding: 5px;
+  border-radius: 10px 10px 10px 0;
+  position: absolute;
+  top: -21px;
+  left: 30px;
+  transition: opacity 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}

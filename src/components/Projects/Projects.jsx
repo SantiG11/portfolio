@@ -39,8 +39,9 @@ export const Projects = React.forwardRef((props, ref) => {
       <div className="projects-title">
         <h3>Proyectos</h3>
       </div>
-      {PROJECTS.map((project) => (
+      {PROJECTS.map((project, i) => (
         <ProjectCard
+          key={i}
           title={project.title}
           img={project.img}
           description={project.description}

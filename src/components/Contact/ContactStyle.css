@@ -1,6 +1,7 @@
 .contact-section {
   display: flex;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .contacts-container {
@@ -61,6 +62,7 @@ a div svg {
 .mail-container:hover {
   width: fit-content;
   overflow: visible;
+  cursor: pointer;
 }
 
 .mail-container a:hover p {

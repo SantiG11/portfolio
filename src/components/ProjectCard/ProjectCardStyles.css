@@ -35,19 +35,17 @@
 
 .used-technologies h4 {
   display: inline;
-  font-size: 16px;
+  font-size: 0.8rem;
+  text-wrap: nowrap;
+  align-self: flex-start;
+  padding-top: 0.1rem;
+  font-weight: 600;
 }
 
 .used-technologies {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.used-technologies h4 {
-  font-size: 1rem;
-  text-wrap: nowrap;
-  align-self: flex-start;
 }
 
 .chips-container {

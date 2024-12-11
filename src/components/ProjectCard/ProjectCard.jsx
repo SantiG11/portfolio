@@ -17,8 +17,8 @@ export function ProjectCard({ title, img, description, technologies }) {
         <div className="used-technologies">
           <h4>Tecnologias usadas: </h4>
           <div className="chips-container">
-            {technologies.map((technology) => (
-              <Badge text={technology} />
+            {technologies.map((technology, i) => (
+              <Badge text={technology} key={i} />
             ))}
           </div>
         </div>
