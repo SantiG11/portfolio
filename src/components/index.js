@@ -7,3 +7,4 @@ export * from './ProjectCard/ProjectCard';
 export * from './Projects/Projects';
 export * from './Skills/Skills';
 export * from './Tooltip/Tooltip';
+export * from './TooltipWrapper/TooltipWrapper';
