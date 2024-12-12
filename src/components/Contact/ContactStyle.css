@@ -20,12 +20,10 @@ a {
   justify-content: center;
   gap: 10px;
   text-decoration: none;
-
   background-color: var(--background-dark);
 }
 
 a div {
-  z-index: 1;
   background-color: var(--background-dark);
 }
 
@@ -39,7 +37,6 @@ a div svg {
 
 .mail-container {
   position: relative;
-
   width: fit-content;
   flex-grow: 1;
 }

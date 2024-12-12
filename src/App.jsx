@@ -8,7 +8,6 @@ function App() {
     { id: "SobreMi", label: "Sobre mi" },
     { id: "Habilidades", label: "Habilidades" },
     { id: "Proyectos", label: "Proyectos" },
-    { id: "Contacto", label: "Contacto" },
   ];
 
   const sectionRefs = sections.reduce((acc, section) => {

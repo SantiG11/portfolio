@@ -1,18 +1,18 @@
 header {
   position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 5px;
+  z-index: 20;
 }
 
 nav {
-  position: fixed;
-  top: 1rem;
-  left: 50%;
   border-radius: 1rem;
   overflow: hidden;
-  transform: translateX(-50%);
   background-color: var(--secondary-color-dark);
   min-width: 500px;
   width: 50vw;
-  z-index: 10;
   opacity: 0.5;
   transition: opacity 2s ease;
 }
@@ -20,6 +20,7 @@ nav {
 nav:hover {
   opacity: 1;
   transition: opacity 0.5s ease;
+  z-index: 20;
 }
 
 .nav-options {
