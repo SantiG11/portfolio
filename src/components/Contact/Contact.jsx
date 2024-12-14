@@ -25,7 +25,7 @@ export function Contact() {
     <div className="contact-section">
       {/* <h4>Contact me : </h4> */}
       <div className="contacts-container">
-        <TooltipWrapper tooltipText={"Linked"}>
+        <TooltipWrapper tooltipText={"LinkedIn"}>
           <a
             href="https://linkedin.com/in/santiago-l-gomez"
             target="_blank"

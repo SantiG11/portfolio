@@ -10,8 +10,12 @@
 
 .hero h1 {
   font-size: 64px;
+  font-family: var(--title-font);
+  font-weight: 900;
+  letter-spacing: 0.03em;
 }
 
 .hero h2 {
+  font-family: var(--subtitle-font);
   color: var(--third-color-dark);
 }

@@ -1,4 +1,6 @@
 .tooltip {
+  font-family: var(--buttons-font);
+  font-weight: 600;
   width: fit-content;
   text-wrap: nowrap;
   font-size: 0.8rem;
@@ -8,8 +10,8 @@
   border-radius: 10px 10px 10px 0;
   position: absolute;
   z-index: 10;
-  top: -21px;
-  left: 30px;
+  top: -27px;
+  left: 32px;
   transition: opacity 0.5s ease;
 }
 

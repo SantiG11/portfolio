@@ -4,6 +4,11 @@
   --primary-color-dark: #415a77;
   --secondary-color-dark: #1b263b;
   --third-color-dark: #778da9;
+
+  --title-font: "Playfair", serif;
+  --subtitle-font: "Raleway", sans-serif;
+  --text-font: "Roboto", sans-serif;
+  --buttons-font: "Poppins", sans-serif;
 }
 
 * {

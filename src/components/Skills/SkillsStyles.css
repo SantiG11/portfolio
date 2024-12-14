@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  width: 60%;
+  width: 70%;
   height: 10vh;
   min-height: fit-content;
   padding: 1rem;
@@ -19,7 +19,6 @@
 }
 
 .skill-container {
-  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,4 +38,6 @@ svg {
 
 .skill-name {
   user-select: none;
+  font-family: var(--buttons-font);
+  font-weight: bold;
 }
