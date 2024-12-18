@@ -27,14 +27,16 @@ function App() {
 
   return (
     <>
-      <header>
+      {/* <header>
         <NavBar sections={sections} scrollToSection={scrollToSection} />
-      </header>
+      </header> */}
       <Hero ref={sectionRefs.Inicio} />
-      <AboutMe ref={sectionRefs.SobreMi} />
-      {/* <Contact /> */}
-      <Skills ref={sectionRefs.Habilidades} />
-      <Projects ref={sectionRefs.Proyectos} />
+      <div className="content-container">
+        <AboutMe ref={sectionRefs.SobreMi} />
+        {/* <Contact /> */}
+        <Skills ref={sectionRefs.Habilidades} />
+        <Projects ref={sectionRefs.Proyectos} />
+      </div>
     </>
   );
 }

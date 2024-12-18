@@ -1,14 +1,10 @@
 import { Badge } from "../Badge/Badge";
 import "./ProjectCardStyles.css";
 
-export function ProjectCard({ title, img, description, technologies }) {
+export function ProjectCard({ title, img, description, technologies, link }) {
   return (
     <div className="project-card">
-      <a
-        className="project-link"
-        href="https://ecommerce-orcin-three-49.vercel.app/"
-        target="_blank"
-      >
+      <a className="project-link" href={link} target="_blank">
         <img className="project-img" src={img} alt={title} />
       </a>
       <article className="project-description-container">

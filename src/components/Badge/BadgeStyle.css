@@ -3,5 +3,6 @@
   border: 1px solid var(--third-color-dark);
   border-radius: 1rem;
   font-size: 0.6rem;
+  font-weight: 600;
   font-family: var(--buttons-font);
 }

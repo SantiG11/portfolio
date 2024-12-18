@@ -1,7 +1,10 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-self: center;
+  height: 100%;
+  max-width: 500px;
+  justify-self: center;
   border-radius: 1.5rem;
   overflow: hidden;
   box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 1);
@@ -11,37 +14,51 @@
 
 .project-link {
   padding: 0;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  position: relative;
 }
 
 .project-img {
   width: 100%;
-  opacity: 0.9;
-  border-radius: 0 0 1rem 1rem;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border: 5px solid #000;
+  background-color: red;
+  border-radius: 1rem;
 }
 
 .project-description-container {
   display: flex;
+  flex: 1;
   text-align: start;
   flex-direction: column;
-  gap: 1rem;
-  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+  padding: 1rem;
 }
 
 .project-description-container h3 {
-  font-size: 32px;
+  font-size: 1.5rem;
+  font-weight: 800;
   font-family: var(--subtitle-font);
   letter-spacing: 0.03em;
+  margin-bottom: 8px;
 }
 
 .project-description-container p {
-  font-size: 16px;
+  font-size: 1rem;
   text-wrap: pretty;
-  font-family: var(--buttons-font);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .used-technologies h4 {
   display: inline;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-wrap: nowrap;
   align-self: flex-start;
   padding-top: 0.1rem;
@@ -51,11 +68,13 @@
 .used-technologies {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  margin-top: auto;
+  gap: 0.5rem;
 }
 
 .chips-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  flex: 1;
+  gap: 8px;
 }
