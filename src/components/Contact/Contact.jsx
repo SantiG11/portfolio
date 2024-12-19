@@ -1,9 +1,7 @@
-import { Tooltip } from "../Tooltip/Tooltip.jsx";
 import { GHICon } from "../../Icons";
 import { LIIcon } from "../../Icons/LIICon";
 import { MailICon } from "../../Icons/MailIcon";
 import "./ContactStyle.css";
-import { useState } from "react";
 import { TooltipWrapper } from "../TooltipWrapper/TooltipWrapper.jsx";
 
 export function Contact() {

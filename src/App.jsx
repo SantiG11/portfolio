@@ -1,8 +1,33 @@
-import { useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import "./App.css";
-import { AboutMe, Contact, Hero, NavBar, Projects, Skills } from "./components";
+import {
+  AboutMe,
+  Hero,
+  ModalBackdrop,
+  NavBar,
+  Projects,
+  Skills,
+} from "./components";
+import { useOpenNav } from "./Logic/useOpenNav";
+import { PortfolioContext } from "./context/PortfolioContext";
+import { OpenBarButton } from "./components/OpenBarButton/OpenBarButton";
 
 function App() {
+  const { modalBackdrop, openNav, setModalBackdrop, setOpenNav } =
+    useContext(PortfolioContext);
+
+  const { handleOpenNav } = useOpenNav();
+
+  useEffect(() => {
+    if (window.innerWidth > 800) {
+      setOpenNav(true);
+      setModalBackdrop(false);
+    } else {
+      setOpenNav(false);
+      setModalBackdrop(false);
+    }
+  }, []);
+
   const sections = [
     { id: "Inicio", label: "Inicio" },
     { id: "SobreMi", label: "Sobre mi" },
@@ -20,20 +45,30 @@ function App() {
     const sectionTop = sectionRefs[id].current.offsetTop;
 
     window.scrollTo({
-      top: sectionTop - offset, // Subtract offset to adjust position
+      top: sectionTop - offset,
       behavior: "smooth",
     });
+
+    if (window.innerWidth < 800) {
+      setOpenNav(false);
+      setModalBackdrop(false);
+    }
   };
 
   return (
     <>
-      {/* <header>
-        <NavBar sections={sections} scrollToSection={scrollToSection} />
-      </header> */}
+      {modalBackdrop && <ModalBackdrop />}
+      <header>
+        {openNav ? (
+          <NavBar sections={sections} scrollToSection={scrollToSection} />
+        ) : (
+          <OpenBarButton openBar={handleOpenNav} />
+        )}
+      </header>
       <Hero ref={sectionRefs.Inicio} />
       <div className="content-container">
         <AboutMe ref={sectionRefs.SobreMi} />
-        {/* <Contact /> */}
+
         <Skills ref={sectionRefs.Habilidades} />
         <Projects ref={sectionRefs.Proyectos} />
       </div>

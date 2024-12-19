@@ -1,6 +1,11 @@
 .projects-section {
   text-align: start;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
 }
 
 .projects-section-title {
@@ -9,6 +14,7 @@
 
 .projects-grid {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   justify-content: space-evenly;

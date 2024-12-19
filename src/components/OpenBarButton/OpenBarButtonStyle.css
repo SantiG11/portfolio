@@ -1,0 +1,23 @@
+.open-bar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+
+  height: 3rem;
+}
+
+.open-bar-button svg {
+  z-index: 5;
+  height: fit-content;
+  width: fit-content;
+}
+
+.open-bar-button svg:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.open-bar-button svg path {
+  fill: var(--third-color-dark);
+}

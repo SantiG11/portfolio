@@ -4,7 +4,7 @@ import { CSSICon, HTMLICon, JSICon, ReactICon } from "../../Icons";
 
 export const Skills = React.forwardRef((props, ref) => {
   return (
-    <div className="skills-section" ref={ref}>
+    <section className="skills-section" ref={ref}>
       <h3>Habilidades</h3>
       <div className="skills-container">
         <HTMLICon />
@@ -12,6 +12,6 @@ export const Skills = React.forwardRef((props, ref) => {
         <JSICon />
         <ReactICon />
       </div>
-    </div>
+    </section>
   );
 });

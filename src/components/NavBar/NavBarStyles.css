@@ -23,6 +23,10 @@ nav:hover {
   z-index: 20;
 }
 
+.close-container {
+  display: none;
+}
+
 .nav-options {
   margin: auto;
   list-style: none;
@@ -47,4 +51,41 @@ nav:hover {
 .nav-option:hover {
   cursor: pointer;
   background-color: var(--primary-color-dark);
+}
+
+@media (max-width: 800px) {
+  header {
+    left: 0;
+    transform: none;
+    padding: 0;
+  }
+
+  nav {
+    border-radius: 0;
+    height: 100vh;
+    min-width: 0;
+    width: 220px;
+    padding: 8px;
+    opacity: 1;
+    transition: none;
+  }
+
+  .close-container {
+    /* border: 1px solid #fff; */
+    display: flex;
+    padding: 8px;
+    height: 3rem;
+  }
+
+  .nav-options {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .nav-option {
+    width: 100%;
+    justify-content: start;
+    padding: 1rem 8px;
+  }
 }

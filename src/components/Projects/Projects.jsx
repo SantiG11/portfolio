@@ -23,7 +23,7 @@ const PROJECTS = [
 
 export const Projects = React.forwardRef((props, ref) => {
   return (
-    <div className="projects-section" ref={ref}>
+    <section className="projects-section" ref={ref}>
       <h3 className="projects-section-title">Proyectos</h3>
       <div className="projects-grid">
         {PROJECTS.map((project, i) => (
@@ -37,6 +37,6 @@ export const Projects = React.forwardRef((props, ref) => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 });
