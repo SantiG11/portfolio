@@ -3,8 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-
-  height: 10vh;
   min-height: fit-content;
   padding: 1rem;
   gap: 1rem;
@@ -13,7 +11,7 @@
 .skills-container {
   display: flex;
   justify-content: space-between;
-
+  gap: 2rem;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -41,4 +39,10 @@ svg {
   user-select: none;
   font-family: var(--buttons-font);
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    justify-content: space-around;
+  }
 }

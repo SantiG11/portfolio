@@ -1,7 +1,7 @@
 .contact-section {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin-top: 2rem;
 }
 
 .contacts-container {
@@ -11,7 +11,7 @@
   justify-content: start;
 
   padding: 5px 10px 5px 0;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 a {
@@ -42,8 +42,8 @@ a div svg {
   flex-grow: 1;
 }
 
-.mail-container p {
-  font-weight: 300;
+.mail-container span {
+  font-weight: 400;
   position: absolute;
   top: 50%;
   left: -20%;
@@ -64,7 +64,7 @@ a div svg {
   cursor: pointer;
 }
 
-.mail-container a:hover p {
+.mail-container a:hover span {
   opacity: 1;
   color: var(--font-color-dark);
   letter-spacing: 0.05em;

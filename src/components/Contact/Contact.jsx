@@ -44,7 +44,7 @@ export function Contact() {
           <div className="mail-container" onClick={copyMail}>
             <a>
               <MailICon />
-              <p id="mail-direction">Santigomez1129@gmail.com</p>
+              <span id="mail-direction">Santigomez1129@gmail.com</span>
             </a>
           </div>
         </TooltipWrapper>

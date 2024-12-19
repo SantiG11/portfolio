@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
 
 export const useOpenNav = () => {

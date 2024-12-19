@@ -5,7 +5,7 @@ import "./ProjectsStyles.css";
 const PROJECTS = [
   {
     title: "Ecommerce",
-    // img: "src/assets/ecommerce-preview.png",
+    img: "src/assets/ecommerce-preview.png",
     link: "https://ecommerce-orcin-three-49.vercel.app/",
     description:
       "This is an ecommerce example webpage, this model is focused on sneakers but it could be adapted to any kind of products. The goal of this project was to learn how to create a basic layout for an ecommerce web page, how to manage a cart and multiple pages that shows different content. ",
@@ -14,7 +14,7 @@ const PROJECTS = [
   {
     title: "Movie Finder",
     link: "https://movie-finder-beta-rust.vercel.app/",
-    // img: "src/assets/movie-finder-preview.png",
+    img: "src/assets/movie-finder-preview.png",
     description:
       "This is a movie finder site, where you can search, filter and sort movies to find the perfect movie for you.",
     technologies: ["HTML", "CSS", "JavaScript", "React"],

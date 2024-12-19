@@ -58,7 +58,7 @@ function App() {
   return (
     <>
       {modalBackdrop && <ModalBackdrop />}
-      <header>
+      <header className={openNav && "small-header"}>
         {openNav ? (
           <NavBar sections={sections} scrollToSection={scrollToSection} />
         ) : (
