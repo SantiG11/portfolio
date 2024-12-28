@@ -8,10 +8,11 @@ header {
 }
 
 nav {
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   overflow: hidden;
   background-color: var(--secondary-color-dark);
   min-width: 500px;
+  max-width: 800px;
   width: 50vw;
   opacity: 0.5;
   transition: opacity 2s ease;
@@ -38,12 +39,13 @@ nav:hover {
 .nav-option {
   user-select: none;
   font-family: var(--buttons-font);
+
   font-weight: 600;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  padding: 10px 5px;
+  padding: 8px 4px;
   text-wrap: nowrap;
   transition: background-color 0.5s ease;
 }

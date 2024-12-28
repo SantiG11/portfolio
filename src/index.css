@@ -1,6 +1,7 @@
 :root {
   --background-dark: #0d1b2a;
-  --font-color-dark: #e0e1dd;
+  --title-color-dark: #e0e1dd;
+  --font-color-dark: #dededed2;
   --primary-color-dark: #415a77;
   --secondary-color-dark: #1b263b;
   --third-color-dark: #778da9;
@@ -14,9 +15,13 @@
 * {
   padding: 0;
   margin: 0;
-  color: var(--font-color-dark);
+  color: var(--title-color-dark);
   box-sizing: border-box;
   user-select: none;
+}
+
+p {
+  color: var(--font-color-dark);
 }
 
 /* * {

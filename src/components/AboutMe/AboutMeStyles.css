@@ -9,11 +9,16 @@
   gap: 1rem;
 }
 
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .about-me-content {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: start;
-  letter-spacing: 0.05em;
-  font-weight: 300;
-  max-width: 60ch;
+  line-height: 1.5rem;
+  font-weight: 400;
   text-wrap: pretty;
 }

@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 8px;
 }
 
 .contacts-container {
@@ -40,16 +41,15 @@ a div svg {
   position: relative;
   width: fit-content;
   flex-grow: 1;
+  z-index: 5;
 }
 
 .mail-container span {
   font-weight: 400;
   position: absolute;
-  top: 50%;
-  left: -20%;
-  transform: translateY(-50%);
+
   white-space: nowrap;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   margin: 0;
   color: var(--background-dark);
   user-select: none;
@@ -67,6 +67,10 @@ a div svg {
 .mail-container a:hover span {
   opacity: 1;
   color: var(--font-color-dark);
+  background-color: var(--secondary-color-dark);
+  z-index: 0;
+  border-radius: 1rem;
+  border: none;
   letter-spacing: 0.05em;
   left: 100%;
   visibility: visible;

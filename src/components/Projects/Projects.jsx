@@ -8,7 +8,7 @@ const PROJECTS = [
     img: "src/assets/ecommerce-preview.png",
     link: "https://ecommerce-orcin-three-49.vercel.app/",
     description:
-      "This is an ecommerce example webpage, this model is focused on sneakers but it could be adapted to any kind of products. The goal of this project was to learn how to create a basic layout for an ecommerce web page, how to manage a cart and multiple pages that shows different content. ",
+      "Proyecto de ejemplo que simula una tienda en línea, desarrollado como modelo para explorar diseño y funcionalidades clave en frontend. Permite agregar y eliminar productos en un carrito de compras, calcular automáticamente el total de la orden y mostrar un resumen detallado del pedido. Diseñado exclusivamente con fines demostrativos. ",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
   },
   {
